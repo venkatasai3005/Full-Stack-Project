@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2 class="mb-4">Dashboard</h2>
+  <div class="row g-3">
+    <div class="col-md-3">
+      <div class="card text-bg-primary h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="card-subtitle mb-2">Total</h6>
+          <h2 class="card-title mb-0">{{ total }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-secondary h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="card-subtitle mb-2">Applied</h6>
+          <h2 class="card-title mb-0">{{ applied }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-info h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="card-subtitle mb-2">Interview</h6>
+          <h2 class="card-title mb-0">{{ interview }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-danger h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="card-subtitle mb-2">Rejected</h6>
+          <h2 class="card-title mb-0">{{ rejected }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-bg-success h-100 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="card-subtitle mb-2">Offer</h6>
+          <h2 class="card-title mb-0">{{ offer }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

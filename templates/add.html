@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2 class="mb-4">Add Application</h2>
+  <form id="applicationForm" action="{{ url_for('add_application') }}" method="POST" novalidate>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="company_name" class="form-label">Company Name</label>
+        <input type="text" class="form-control" id="company_name" name="company_name" required>
+        <div class="invalid-feedback">Company Name is required.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="role" class="form-label">Role</label>
+        <input type="text" class="form-control" id="role" name="role" required>
+        <div class="invalid-feedback">Role is required.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="application_date" class="form-label">Application Date</label>
+        <input type="date" class="form-control" id="application_date" name="application_date" required>
+        <div class="invalid-feedback">Please enter a valid date.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="status" class="form-label">Status</label>
+        <select class="form-select" id="status" name="status" required>
+          <option value="" selected disabled>Choose...</option>
+          <option>Applied</option>
+          <option>Interview</option>
+          <option>Rejected</option>
+          <option>Offer</option>
+        </select>
+        <div class="invalid-feedback">Please select a status.</div>
+      </div>
+      <div class="col-12">
+        <label for="notes" class="form-label">Notes</label>
+        <textarea class="form-control" id="notes" name="notes" rows="4" required></textarea>
+        <div class="invalid-feedback">Notes are required.</div>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <button type="submit" class="btn btn-primary">Save</button>
+      <a href="{{ url_for('list_applications') }}" class="btn btn-outline-secondary">Cancel</a>
+    </div>
+  </form>
+{% endblock %}

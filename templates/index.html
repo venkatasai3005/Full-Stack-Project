@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="mb-4">
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container py-5">
+        <h1 class="display-5 fw-bold">Welcome to Job Application Tracker</h1>
+        <p class="col-md-8 fs-5">Track the companies you applied to, keep notes, and monitor your progress.</p>
+        <a class="btn btn-primary btn-lg me-2" href="{{ url_for('add_application') }}">Add Application</a>
+        <a class="btn btn-outline-primary btn-lg" href="{{ url_for('list_applications') }}">View Applications</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Add Applications</h5>
+            <p class="card-text">Quickly add details like company, role, date, status, and notes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Track Progress</h5>
+            <p class="card-text">See all your applications in a clean table and filter by status.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Dashboard</h5>
+            <p class="card-text">View total applications and outcomes at a glance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
