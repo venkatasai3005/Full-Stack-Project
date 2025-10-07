@@ -188,6 +188,19 @@ For production deployment, set the following environment variables:
 - **Modern UI**: Bootstrap 5 components with custom styling
 - **Accessibility**: Semantic HTML and ARIA labels
 
+## Demo Images:
+<img width="1858" height="952" alt="image" src="https://github.com/user-attachments/assets/f56bc214-d1d4-47f3-87bd-5659c0199e0a" />
+- This is home page
+<img width="1844" height="949" alt="image" src="https://github.com/user-attachments/assets/e2460d77-2c94-487a-a7c8-a4d9d912061b" />
+-This is Page Where we add jobs
+<img width="1857" height="953" alt="image" src="https://github.com/user-attachments/assets/6adc13bf-9a5f-4047-a723-245ab914c003" />
+-This is Where we check our applications also we can edit here or delete
+<img width="1860" height="949" alt="image" src="https://github.com/user-attachments/assets/d41cef22-2a9a-442b-8dc9-e2313359a9b0" />
+-This is where we can see dashboard...which will have status of our job applications and all
+
+
+
+
 ## 🧪 Testing
 
 The application includes:
